@@ -7,8 +7,46 @@ body {
   font-family: Roboto, sans-serif;
 
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+.header, .footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.footer {
+  background-color: #eee;
+}
+
+.header > * {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+  margin:0;
+  padding:0;
+}
+.footer > * {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+  margin:0;
+  padding:0;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
 }
 
 img {
@@ -20,6 +58,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px;
 }
 
 input {
@@ -27,46 +66,4 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
-}
-
-a {
-  text-decoration: none;
-  color: gray;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-}
-
-.header, 
-.footer {
-  display: flex;
-  justify-content: space-between;
-  margin: 16px;
-}
-
-.header > * {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  
-}
-
-.footer > * {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  
-}
-
-ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 16px
 }
