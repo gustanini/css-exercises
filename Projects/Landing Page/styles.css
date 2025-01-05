@@ -1,0 +1,199 @@
+/* SETUP SECTION */
+/* keep site consistent */
+@import "meyer-reset.css";
+* {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', Calibri, sans-serif;
+}
+
+/* sticky footer */
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.site-content {
+    flex: 1;
+}
+
+/* STRUCTURE */
+/* header */
+header {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #1f2937;
+    font-family: 'Trebuchet MS', Calibri, sans-serif;
+    color: #F9FAF8;
+    padding: 1em;
+    gap: 10em;
+}
+header > .logo{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.header-links {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+/* main */
+main {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+}
+
+/* section 1 */
+.section-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #1f2937;
+}
+.section-1 > .card-1 {
+    display: flex;
+    flex-direction: column;
+    max-width: 20em;
+    color: #F9FAF8;
+    gap: 0.5em;
+}
+.card-1 > h1 {
+    font-weight: 900;
+    font-size: 3em;
+}
+.card-1 > p {
+    font-size: 1.1em;
+}
+.card-1 > button {
+    max-width: 6em;
+    border-radius: 0.5em;
+    font-weight: 550;
+    color: #F9FAF8;
+    background-color:#3882F6;
+    padding: .5em 0;
+    border: 0px transparent;
+}
+.section-1 > .card-2 {
+    display: flex;
+    width: 200px;
+    height: 200px;
+}
+
+/* section 2 */
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em;
+    gap: 2em;
+}
+.section-2 > .text-content {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.section-2 > .card-row {
+    display: flex;
+    flex-wrap: wrap; /**/
+    justify-content: center;
+    max-width: 75%;
+    gap: 2em;
+}
+.card-row > .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+.card > .subtext {
+    width: 10em;
+    font-size: 1em;
+}
+.square {
+    border: solid #3882F6 .2em;
+    border-radius: 1em;
+    height: 7em;
+    width: 7em;
+}
+
+
+/* section 3 */
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #A5E7FF;
+    padding: .5em;
+}
+.section-3 > .text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    max-width: 70%;
+}
+.text-content > .quote {
+    font-size: 1.3em;
+}
+.text-content > .quote-author {
+    display: flex;
+    align-self: flex-end;
+    font-weight: bold;
+}
+
+/* section-4 */
+.section-4 {
+    display:flex;
+    justify-content: center;
+}
+.section-4 > .blue-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1em;
+    width: 80%;
+    background-color: #3882F6;
+    color: white;
+    padding: 2em;
+    border-radius: .5em;
+}
+.blue-container > .card-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+#call-to-action {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#call-to-action-content {
+    font-size: 1em;
+}
+.blue-container > button {
+    padding: 0 2em;
+    border-radius: 0.5em;
+    font-weight: 550;
+    color: #F9FAF8;
+    background-color: #3882F6;
+    border: solid #F9FAF8 .2em;
+}
+
+.section-1, .section-2, .section-3, .section-4 {
+    padding: 3.1em 0;
+}
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    color: #F9FAF8;
+    padding: 1em;
+}
